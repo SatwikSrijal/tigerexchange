@@ -275,35 +275,98 @@
 
       <!-- Right Dynamic Composite Hero Banner Art -->
       <div class="lg:col-span-6 relative mt-2 lg:mt-0">
-  <div class="relative w-full rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-tr from-amber-500 via-orange-500 to-blue-600 p-1 shadow-xl">
-    <div class="relative rounded-lg sm:rounded-xl overflow-hidden bg-slate-900 h-[220px] xs:h-[260px] sm:h-[340px] md:h-[380px] lg:h-[430px] flex items-center justify-center">
+    <div class="relative w-full rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-tr from-amber-500 via-orange-500 to-blue-600 p-1 shadow-xl">
+        <div class="relative rounded-lg sm:rounded-xl overflow-hidden bg-slate-900 h-[220px] xs:h-[260px] sm:h-[340px] md:h-[380px] lg:h-[430px] flex items-center justify-center text-white">
 
-      <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-      <div class="relative z-10 w-full h-full p-2 sm:p-3 md:p-4 grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 md:gap-4">
-        <!-- Card 1: Call -->
-        <div class="relative w-full h-full rounded-lg sm:rounded-xl overflow-hidden border border-amber-500/30 bg-black/40 shadow-md">
-          <img src="call.png" alt="Call" class="w-full h-full object-cover">
+            <div class="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 z-10 w-full h-full">
+                <!-- Card 1: Call -->
+                <div class="relative w-full h-full bg-black/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-amber-500/30 overflow-hidden shadow-md flex items-center justify-center p-1 sm:p-1.5">
+                    <img src="call.png" alt="Call" class="w-full h-full object-contain rounded-md sm:rounded-lg">
+                </div>
+                <!-- Card 2: Aviator -->
+                <div class="relative w-full h-full bg-black/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-amber-500/30 overflow-hidden shadow-md flex items-center justify-center p-1 sm:p-1.5">
+                    <img src="aviator.jpg" alt="Aviator" class="w-full h-full object-contain rounded-md sm:rounded-lg">
+                </div>
+                <!-- Card 3: Chicken -->
+                <div class="relative w-full h-full bg-black/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-amber-500/30 overflow-hidden shadow-md flex items-center justify-center p-1 sm:p-1.5">
+                    <img src="chicken.png" alt="Chicken" class="w-full h-full object-contain rounded-md sm:rounded-lg">
+                </div>
+                <!-- Card 4: Dragon -->
+                <div class="relative w-full h-full bg-black/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-amber-500/30 overflow-hidden shadow-md flex items-center justify-center p-1 sm:p-1.5">
+                    <img src="dragon.png" alt="Dragon" class="w-full h-full object-contain rounded-md sm:rounded-lg">
+                </div>
+            </div>
+
+            <svg viewBox="0 0 700 450" class="w-full h-full object-cover relative z-0 opacity-20" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="cricketGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#38bdf8" />
+                        <stop offset="100%" stop-color="#0284c7" />
+                    </linearGradient>
+                    <linearGradient id="fireGrad" x1="0" y1="1" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#f97316" />
+                        <stop offset="50%" stop-color="#facc15" />
+                        <stop offset="100%" stop-color="#ef4444" />
+                    </linearGradient>
+                    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1e293b" />
+                        <stop offset="100%" stop-color="#0f172a" />
+                    </linearGradient>
+                </defs>
+
+                <ellipse cx="350" cy="450" rx="380" ry="120" fill="url(#groundGrad)" opacity="0.9" />
+                <path d="M 50 350 Q 250 180, 650 260" stroke="url(#fireGrad)" stroke-width="8" fill="none" opacity="0.8" stroke-linecap="round" />
+                <path d="M 120 400 Q 380 280, 680 180" stroke="#38bdf8" stroke-width="4" fill="none" opacity="0.6" />
+
+                <g transform="translate(320, 90)">
+                    <circle cx="50" cy="30" r="16" fill="#38bdf8" />
+                    <rect x="52" y="28" width="16" height="5" rx="2" fill="#0f172a" />
+                    <path d="M 40 45 L 65 45 L 75 110 L 30 110 Z" fill="#0284c7" />
+                    <rect x="75" y="10" width="10" height="95" rx="3" transform="rotate(28 75 10)" fill="#fbbf24" />
+                    <path d="M 46 50 L 80 40 L 70 65" stroke="#f1f5f9" stroke-width="7" fill="none" stroke-linecap="round" />
+                    <rect x="30" y="105" width="15" height="75" rx="5" fill="#f8fafc" />
+                    <rect x="55" y="105" width="16" height="70" rx="5" fill="#f8fafc" />
+                    <circle cx="210" cy="40" r="13" fill="#ef4444" stroke="#ffffff" stroke-width="2" />
+                    <line x1="170" y1="52" x2="200" y2="44" stroke="#ef4444" stroke-dasharray="4,4" stroke-width="3" />
+                </g>
+
+                <g transform="translate(110, 160)">
+                    <circle cx="45" cy="30" r="13" fill="#e2e8f0" />
+                    <path d="M 38 43 L 56 43 L 62 100 L 34 100 Z" fill="#2563eb" />
+                    <path d="M 40 98 L 15 145 M 54 98 L 75 135" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round" />
+                    <circle cx="95" cy="140" r="16" fill="#ffffff" stroke="#000000" stroke-width="2" />
+                    <path d="M 95 130 L 102 135 L 99 145 L 91 145 L 88 135 Z" fill="#000000" />
+                </g>
+
+                <g transform="translate(370, 310)">
+                    <path d="M 20 50 Q 80 20, 180 20 L 260 40 Q 280 50, 270 65 L 30 65 Q 10 65, 20 50 Z" fill="#ea580c" />
+                    <ellipse cx="70" cy="65" rx="20" ry="18" fill="#1e293b" stroke="#f97316" stroke-width="4" />
+                    <ellipse cx="230" cy="65" rx="20" ry="18" fill="#1e293b" stroke="#f97316" stroke-width="4" />
+                    <rect x="25" y="25" width="30" height="8" rx="2" fill="#0f172a" />
+                    <line x1="40" y1="33" x2="40" y2="50" stroke="#0f172a" stroke-width="4" />
+                </g>
+
+                <g transform="translate(20, 240) scale(0.7)">
+                    <path d="M 120 40 Q 150 20, 170 10 Q 180 30, 160 50 L 170 70 L 150 80 L 130 60 L 90 70 L 60 130 L 40 120 L 70 60 L 50 60 L 30 80 L 10 70 L 40 40 Z" fill="#d97706" />
+                    <circle cx="120" cy="18" r="9" fill="#facc15" />
+                    <rect x="112" y="26" width="16" height="18" rx="4" fill="#dc2626" />
+                </g>
+
+                <g transform="translate(50, 70) scale(0.65)">
+                    <circle cx="50" cy="40" r="10" fill="#a3e635" />
+                    <ellipse cx="110" cy="60" rx="30" ry="40" fill="none" stroke="#f8fafc" stroke-width="4" transform="rotate(-35 110 60)" />
+                    <line x1="85" y1="85" x2="45" y2="135" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+                </g>
+            </svg>
+
+            <div class="absolute bottom-3 left-3 bg-black/85 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg border border-amber-500/40 text-[10px] sm:text-xs flex items-center gap-1.5 sm:gap-2 z-20">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span class="text-white font-medium"><strong class="text-amber-400">4,280+</strong> Matches Live</span>
+            </div>
         </div>
-
-        <!-- Card 2: Aviator -->
-        <div class="relative w-full h-full rounded-lg sm:rounded-xl overflow-hidden border border-amber-500/30 bg-black/40 shadow-md">
-          <img src="aviator.jpg" alt="Aviator" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Card 3: Chicken -->
-        <div class="relative w-full h-full rounded-lg sm:rounded-xl overflow-hidden border border-amber-500/30 bg-black/40 shadow-md">
-          <img src="chicken.png" alt="Chicken" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Card 4: Dragon -->
-        <div class="relative w-full h-full rounded-lg sm:rounded-xl overflow-hidden border border-amber-500/30 bg-black/40 shadow-md">
-          <img src="dragon.png" alt="Dragon" class="w-full h-full object-cover">
-        </div>
-      </div>
-
     </div>
-  </div>
 </div></section>
 
   <!-- CASINO & SPORTS GAMES GRID -->
