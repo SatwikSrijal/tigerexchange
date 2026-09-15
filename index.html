@@ -282,24 +282,32 @@
 
             <div class="absolute grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 z-10 w-full h-full">
                 <!-- Card 1: Call -->
-                <div class="bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 p-1.5 flex flex-col items-center justify-center">
-                    <img src="call.png" alt="Call" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full mb-1 sm:mb-2 object-cover">
-                    <span class="text-[10px] sm:text-xs font-medium text-amber-400">Call</span>
+                <div class="relative group bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 overflow-hidden">
+                    <img src="call.png" alt="Call" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-end justify-center p-2">
+                        <span class="text-[10px] sm:text-xs font-medium text-amber-400">Call</span>
+                    </div>
                 </div>
                 <!-- Card 2: Aviator -->
-                <div class="bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 p-1.5 flex flex-col items-center justify-center">
-                    <img src="aviator.jpg" alt="Aviator" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full mb-1 sm:mb-2 object-cover">
-                    <span class="text-[10px] sm:text-xs font-medium text-amber-400">Aviator</span>
+                <div class="relative group bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 overflow-hidden">
+                    <img src="aviator.jpg" alt="Aviator" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-end justify-center p-2">
+                        <span class="text-[10px] sm:text-xs font-medium text-amber-400">Aviator</span>
+                    </div>
                 </div>
                 <!-- Card 3: Chicken -->
-                <div class="bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 p-1.5 flex flex-col items-center justify-center">
-                    <img src="chicken.png" alt="Chicken" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full mb-1 sm:mb-2 object-cover">
-                    <span class="text-[10px] sm:text-xs font-medium text-amber-400">Chicken</span>
+                <div class="relative group bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 overflow-hidden">
+                    <img src="chicken.png" alt="Chicken" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-end justify-center p-2">
+                        <span class="text-[10px] sm:text-xs font-medium text-amber-400">Chicken</span>
+                    </div>
                 </div>
                 <!-- Card 4: Dragon -->
-                <div class="bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 p-1.5 flex flex-col items-center justify-center">
-                    <img src="dragon.png" alt="Dragon" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full mb-1 sm:mb-2 object-cover">
-                    <span class="text-[10px] sm:text-xs font-medium text-amber-400">Dragon</span>
+                <div class="relative group bg-black/50 backdrop-blur-sm rounded-lg border border-amber-500/30 overflow-hidden">
+                    <img src="dragon.png" alt="Dragon" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/30 flex items-end justify-center p-2">
+                        <span class="text-[10px] sm:text-xs font-medium text-amber-400">Dragon</span>
+                    </div>
                 </div>
             </div>
 
